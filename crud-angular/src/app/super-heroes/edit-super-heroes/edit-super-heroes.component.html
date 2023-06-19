@@ -1,0 +1,39 @@
+<div class="container mt-2">
+    <legend>Edit</legend>
+    <form>
+        <div class="mb-3">
+            <label for="textName" class="form-label">Name</label>
+            <input type="text" 
+            class="form-control" 
+            id="textName" 
+            aria-describedby="emailHelp"
+            name="name" 
+            [(ngModel)]="superHeroes.name" />
+        </div>
+        <div class="mb-3">
+            <label for="textFranchise" class="form-label">Franchise</label>
+            <input type="text" 
+            class="form-control" 
+            id="textFranchise" 
+            aria-describedby="emailHelp"
+            name="franchise" 
+            [(ngModel)]="superHeroes.franchise"/>
+        </div>
+        <div class="mb-3">
+            <label for="textImageUrl" class="form-label">Image URL</label>
+            <input type="text" 
+            class="form-control" 
+            id="textImageUrl" 
+            aria-describedby="emailHelp" 
+            name="imageUrl"
+            [(ngModel)]="superHeroes.imageUrl"/>
+        </div>
+        <div class="mb-3">
+            <label for="textPowers" class="form-label">Powers</label>
+            <textarea class="form-control" id="textPowers" rows="3"
+            name="powers"
+            [(ngModel)]="superHeroes.powers"></textarea>
+        </div>
+        <button type="button" class="btn btn-primary" (click)="update()">Update</button>
+    </form>
+</div>
